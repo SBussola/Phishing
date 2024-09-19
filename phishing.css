@@ -5,13 +5,87 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /* Estilização geral do corpo */
 body {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: #f4f4f4;
   color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   padding: 40px;
+}
+
+#ifood-logo {
+  width: 10rem;
+}
+
+/* Estilização do container das opções */
+#area {
+  background-color: #f4f4f4;
+  width: 45%;
+  height: 390px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+#option-yes {
+  background-color: rgb(50, 205, 97);
+  transition: .5s;
+}
+
+#option-no {
+  background-color: rgb(205, 50, 50);
+}
+
+#option-yes:hover {
+  color: rgb(65, 65, 65);
+  background-color: rgb(168, 233, 187);
+  
+}
+
+/* Estilização das opções */
+.option {
+  height: 90px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  font-size: 3rem;
+  border-radius: 1.5rem;
+  transition: transform 0.5s, color 0.5s;
+  box-shadow: 1px 3px 3px 2px rgba(1, 1, 1, 0.5);
+  cursor: pointer;
+}
+
+/* Estilização do footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 50px;
+  margin-top: 45px;
+  transition: opacity 0.5s;
+}
+
+.cuponeria img {
+  max-width: 30%;
+  height: auto;
 }
 
 /* Estilização das imagens */
@@ -19,11 +93,6 @@ img {
   max-width: 50%;
   height: auto;
   margin: 20px 0;
-}
-
-.cuponeria img {
-  max-width: 30%;
-  height: auto;
 }
 
 /* Estilização do título principal */
@@ -61,52 +130,4 @@ button {
 
 button:hover {
   background-color: #c0392b;
-}
-
-/* Estilização do container das opções */
-#area {
-  background-color: #f4f4f4;
-  width: 700px;
-  height: 390px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1050px;
-  border-radius: 15px;
-}
-
-/* Estilização das opções */
-.option {
-  background-color: rgb(50, 205, 97);
-  height: 90px;
-  width: 153px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
-  font-size: 35px;
-  border-radius: 15px;
-  transition: transform 0.5s, color 0.5s;
-  box-shadow: 1px 3px 3px 2px rgba(1, 1, 1, 0.5);
-  cursor: pointer;
-}
-
-#opcno:hover {
-  color: red;
-}
-
-#opcyes:hover {
-  color: blue;
-}
-
-/* Estilização do footer */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: red;
-  font-size: 50px;
-  margin-top: 45px;
-  transition: opacity 0.5s;
 }
